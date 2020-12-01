@@ -21,10 +21,14 @@ import "@mdi/font/css/materialdesignicons.css";
 import toolbar from "./components/core/Toolbar.vue";
 import breadcrumbs from "./components/core/Breadcrumbs.vue";
 import botcard from "./components/Botcard.vue";
+import sort from "./components/Sort.vue";
+import navbar from "./components/Navbar.vue";
 
 Vue.component("toolbar", toolbar);
 Vue.component("breadcrumbs", breadcrumbs);
 Vue.component("botcard", botcard);
+Vue.component("sort", sort);
+Vue.component("navbar", navbar);
 
 // setupComponents(Vue);
 

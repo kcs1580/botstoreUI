@@ -3,20 +3,24 @@
     <v-card class="mx-auto" max-width="300">
       <v-card-text align="center">
         <v-chip>마케팅</v-chip><v-chip>커머스</v-chip>
-        <p class="display-1 text--primary">
+        <p class="display-1 text--primary mt-1">
           금지어 탐색
         </p>
 
-        <div class="text--primary">
-          이미지 파일과 금지어를<br />
-          입력하면 페이지내 여부와<br />
-          위치를 체크해 주는...
-        </div>
-        <v-avatar color="yellow" size="50">
-          <div>FREE</div>
-        </v-avatar>
+        <v-layout d-inline-flex>
+          <div>
+            이미지 파일과 금지어를<br />
+            입력하면 페이지내 여부와<br />
+            위치를 체크해 주는...
+          </div>
+
+          <v-avatar class="ml-3" color="yellow" size="50">
+            <div>FREE</div>
+          </v-avatar>
+        </v-layout>
       </v-card-text>
       <v-card-actions>
+        <v-spacer />
         <v-rating
           v-model="rating"
           readonly="true"

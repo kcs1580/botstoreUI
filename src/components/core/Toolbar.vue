@@ -1,40 +1,36 @@
-<template
-  ><div>
-    <v-app-bar>
-      <v-toolbar>
-        <v-toolbar-title>Human2Bot</v-toolbar-title>
-        <v-spacer></v-spacer>
-        <v-text-field
-          flat
-          solo-inverted
-          prepend-inner-icon="mdi-magnify"
-          label="Search..."
-          class="text-field"
-        >
-        </v-text-field>
-        <v-spacer></v-spacer>
+<template>
+  <div class="justify-center">
+    <v-toolbar flat>
+      <v-toolbar-title>Human2Bot</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-text-field
+        flat
+        solo-inverted
+        prepend-inner-icon="mdi-magnify"
+        label="Search..."
+        class="text-field"
+      >
+      </v-text-field>
+      <v-spacer></v-spacer>
 
-        <v-btn icon flat>
-          <v-avatar size="42px">
-            <img
-              src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Sunglasses&hairColor=Black&facialHairType=Blank&clotheType=CollarSweater&clotheColor=Black&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light"
-            />
-          </v-avatar>
-        </v-btn>
+      <v-btn icon flat>
+        <v-avatar size="42px">
+          <img
+            src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Sunglasses&hairColor=Black&facialHairType=Blank&clotheType=CollarSweater&clotheColor=Black&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light"
+          />
+        </v-avatar>
+      </v-btn>
+      <v-chip>RainbowBrain</v-chip>
+    </v-toolbar>
 
-        <v-chip>RainbowBrain</v-chip>
-      </v-toolbar>
-      <v-container class="routers">
-        <router-link to="/"><v-btn>BotStore</v-btn></router-link>
-        <router-link to="/community"><v-btn>커뮤니티</v-btn></router-link>
-        <router-link to="/download"><v-btn>자료실</v-btn></router-link>
-      </v-container>
-    </v-app-bar>
+    <navbar />
   </div>
 </template>
 
 <script>
+import Navbar from "../Navbar.vue";
 export default {
+  components: { Navbar },
   data() {
     return {
       rating: null,

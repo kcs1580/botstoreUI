@@ -1,28 +1,32 @@
 <template>
   <v-container grid-list-xl>
-    <v-layout row wrap>
-      <v-flex sm12>
-        <h4>이번 달 추천</h4>
-      </v-flex>
-      <v-flex
-        lg3
-        sm12
-        v-for="(item, index) in users"
-        :key="'bottom-nav' + index"
-      >
-        <botcard bottom-nav v-bind="item"> </botcard>
-      </v-flex>
-      <v-flex sm12>
-        <h4>"마케팅" 업무 추천 봇</h4>
-      </v-flex>
-      <v-flex
-        lg3
-        sm12
-        v-for="(item, index) in users"
-        :key="'bottom-nav' + index"
-      >
-        <botcard bottom-nav v-bind="item"> </botcard>
-      </v-flex>
+    <v-layout>
+      <sort />
+
+      <v-layout row wrap>
+        <v-flex sm12>
+          <h4>이번 달 추천</h4>
+        </v-flex>
+        <v-flex
+          lg4
+          sm12
+          v-for="(item, index) in users"
+          :key="'bottom-nav' + index"
+        >
+          <botcard bottom-nav v-bind="item"> </botcard>
+        </v-flex>
+        <v-flex sm12>
+          <h4>"마케팅" 업무 추천 봇</h4>
+        </v-flex>
+        <v-flex
+          lg4
+          sm12
+          v-for="(item, index) in users"
+          :key="'bottom-nav' + index"
+        >
+          <botcard bottom-nav v-bind="item"> </botcard>
+        </v-flex>
+      </v-layout>
     </v-layout>
   </v-container>
 </template>
