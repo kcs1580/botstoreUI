@@ -1,5 +1,5 @@
 <template>
-  <div class="justify-center">
+  <div>
     <v-toolbar flat>
       <v-toolbar-title>Human2Bot</v-toolbar-title>
       <v-spacer></v-spacer>
