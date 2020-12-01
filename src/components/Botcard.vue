@@ -1,11 +1,11 @@
 <template>
   <div class="name-card">
-    <v-card class="mx-auto" max-width="300">
+    <v-card hover class="mx-auto" max-width="400">
       <v-card-text align="center">
-        <v-chip>마케팅</v-chip><v-chip>커머스</v-chip>
-        <p class="display-1 text--primary mt-1">
-          금지어 탐색
-        </p>
+        <v-chip color="primary" text-color="white">마케팅</v-chip
+        ><v-chip color="primary" text-color="white">커머스</v-chip>
+
+        <p class="display-1 text--primary mt-1">금지어 탐색</p>
 
         <v-layout d-inline-flex>
           <div>

@@ -1,33 +1,33 @@
 <template>
-  <v-container grid-list-xl>
+  <v-container grid-list-xl class="container2">
+    <v-spacer />
     <v-layout>
       <sort />
 
       <v-layout row wrap>
+        <carousel />
+
         <v-flex sm12>
-          <h4>이번 달 추천</h4>
+          <h2>이번 달 추천</h2>
+          <div class="more">
+            <v-chip text-color="white" color="primary">More</v-chip>
+          </div>
         </v-flex>
-        <v-flex
-          lg4
-          sm12
-          v-for="(item, index) in users"
-          :key="'bottom-nav' + index"
-        >
+        <v-flex lg4 sm12 v-for="(item, index) in users" :key="index">
           <botcard bottom-nav v-bind="item"> </botcard>
         </v-flex>
         <v-flex sm12>
-          <h4>"마케팅" 업무 추천 봇</h4>
-        </v-flex>
-        <v-flex
-          lg4
-          sm12
-          v-for="(item, index) in users"
-          :key="'bottom-nav' + index"
+          <h2>"마케팅" 업무 추천 봇</h2>
+          <v-chip class="more" text-color="white" color="primary"
+            >More</v-chip
+          ></v-flex
         >
+        <v-flex lg4 sm12 v-for="(item, index) in users" :key="index">
           <botcard bottom-nav v-bind="item"> </botcard>
         </v-flex>
       </v-layout>
     </v-layout>
+    <v-spacer />
   </v-container>
 </template>
 
@@ -41,70 +41,58 @@ export default {
         {
           tags1: "마케팅",
           tags2: "커머스",
-          name: "Michael Wang",
+          name: "금지어 탐색",
           color: "#ba234b",
           dark: true
         },
         {
-          jobTitle: "Web Designer",
-          name: "Jessie J",
-          color: "#e57b09",
-          dark: true,
-          avatar: {
-            src:
-              "https://avataaars.io/?avatarStyle=Transparent&topType=WinterHat1&accessoriesType=Sunglasses&hatColor=Red&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light",
-            size: "36"
-          }
+          tags1: "마케팅",
+          tags2: "커머스",
+          name: "금지어 탐색",
+          color: "#ba234b",
+          dark: true
         },
         {
-          jobTitle: "Web Developer",
-          name: "Jim J",
-          color: "teal",
-          dark: true,
-          avatar: {
-            src:
-              "https://avataaars.io/?avatarStyle=Transparent&topType=Hat&accessoriesType=Sunglasses&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Happy&eyebrowType=Default&mouthType=Default&skinColor=Light",
-            size: "36"
-          }
+          tags1: "마케팅",
+          tags2: "커머스",
+          name: "금지어 탐색",
+          color: "#ba234b",
+          dark: true
         },
         {
-          jobTitle: "Product Manager",
-          name: "John Doe",
-          color: "#a51288",
-          dark: true,
-          cardBgImage: "/static/bg/15.jpg",
-          avatar: {
-            src:
-              "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairSides&accessoriesType=Blank&hairColor=BrownDark&facialHairType=BeardMedium&facialHairColor=BrownDark&clotheType=Hoodie&clotheColor=Gray01&eyeType=WinkWacky&eyebrowType=SadConcerned&mouthType=ScreamOpen&skinColor=Brown",
-            size: "36"
-          }
+          tags1: "마케팅",
+          tags2: "커머스",
+          name: "금지어 탐색",
+          color: "#ba234b",
+          dark: true
         },
         {
-          jobTitle: "Product Manager",
-          name: "John Doe",
-          color: "#a51288",
-          dark: true,
-          cardBgImage: "/static/bg/15.jpg",
-          avatar: {
-            src:
-              "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairSides&accessoriesType=Blank&hairColor=BrownDark&facialHairType=BeardMedium&facialHairColor=BrownDark&clotheType=Hoodie&clotheColor=Gray01&eyeType=WinkWacky&eyebrowType=SadConcerned&mouthType=ScreamOpen&skinColor=Brown",
-            size: "36"
-          }
+          tags1: "마케팅",
+          tags2: "커머스",
+          name: "금지어 탐색",
+          color: "#ba234b",
+          dark: true
         },
         {
-          jobTitle: "Product Manager",
-          name: "John Doe",
-          color: "#a51288",
-          dark: true,
-          cardBgImage: "/static/bg/15.jpg",
-          avatar: {
-            src:
-              "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairSides&accessoriesType=Blank&hairColor=BrownDark&facialHairType=BeardMedium&facialHairColor=BrownDark&clotheType=Hoodie&clotheColor=Gray01&eyeType=WinkWacky&eyebrowType=SadConcerned&mouthType=ScreamOpen&skinColor=Brown",
-            size: "36"
-          }
+          tags1: "마케팅",
+          tags2: "커머스",
+          name: "금지어 탐색",
+          color: "#ba234b",
+          dark: true
         }
       ]
     };
   }
 };
 </script>
+<style>
+.container2 {
+  padding-right: 280px;
+  padding-left: 280px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+}
+.more {
+  float: right;
+}
+</style>

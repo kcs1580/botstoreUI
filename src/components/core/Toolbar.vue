@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <v-toolbar flat>
-      <v-toolbar-title>Human2Bot</v-toolbar-title>
-      <v-spacer></v-spacer>
+  <div class="toolbar d-block ">
+    <v-toolbar>
+      <v-spacer />
+      <v-toolbar-title><h2>Bot2Human</h2></v-toolbar-title>
+
+      <v-spacer />
       <v-text-field
         flat
         solo-inverted
@@ -11,8 +13,7 @@
         class="text-field"
       >
       </v-text-field>
-      <v-spacer></v-spacer>
-
+      <v-spacer />
       <v-btn icon flat>
         <v-avatar size="42px">
           <img
@@ -20,7 +21,9 @@
           />
         </v-avatar>
       </v-btn>
+
       <v-chip>RainbowBrain</v-chip>
+      <v-spacer />
     </v-toolbar>
 
     <navbar />
@@ -55,6 +58,13 @@ export default {
 };
 </script>
 <style>
+.toolbar {
+  margin: 5px;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+}
 .toolbar-menu-item {
   padding-left: 5px;
 }

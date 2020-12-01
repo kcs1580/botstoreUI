@@ -5,7 +5,6 @@ import App from "./App";
 import router from "./router";
 
 import "vuetify/dist/vuetify.min.css";
-import "font-awesome/css/font-awesome.css";
 
 import Vuetify from "vuetify";
 
@@ -23,12 +22,14 @@ import breadcrumbs from "./components/core/Breadcrumbs.vue";
 import botcard from "./components/Botcard.vue";
 import sort from "./components/Sort.vue";
 import navbar from "./components/Navbar.vue";
+import carousel from "./components/Carousel.vue";
 
 Vue.component("toolbar", toolbar);
 Vue.component("breadcrumbs", breadcrumbs);
 Vue.component("botcard", botcard);
 Vue.component("sort", sort);
 Vue.component("navbar", navbar);
+Vue.component("carousel", carousel);
 
 // setupComponents(Vue);
 
